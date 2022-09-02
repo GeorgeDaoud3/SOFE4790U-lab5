@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.203.76.149:8080
+functions:
+  decorator:
+    lang: node12
+    handler: ./decorator
+    image: us.gcr.io/windy-smoke-361010/decorator:latest
+
